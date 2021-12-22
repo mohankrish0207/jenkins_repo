@@ -1,8 +1,8 @@
 import boto3
 import sys
 
-accesskey= sys.argv[]
-secretkey= sys.argv[]
+accesskey= sys.argv[100]
+secretkey= sys.argv[100]
 client = boto3.client('ec2',region_name = 'ap-south-1', aws_access_key_id = accesskey, aws_secret_access_key = secretkey)
 
 myec2 = client.describe_instances()
